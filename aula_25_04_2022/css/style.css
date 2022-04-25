@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("img/amor.png");
+}
