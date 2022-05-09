@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt('Insira o valor de A:'))
+        var b = Number(prompt('Insira o valor de B:'))
+        var c = Number(prompt('Insira o valor de C:'))
+        var calc_delta = Math.pow(b, 2) -4 * a * c
+        var x1 = (-1 * b + (Math.sqrt(calc_delta))) / 2 * a
+        var x2 = (-1 * b - (Math.sqrt(calc_delta))) / 2 * a
+
+        alert (`O valor indicado por a é ${a} \nO valor indicado por b é ${b} \nO Valor indicado por c é ${c} \nO valor do delta é ${calc_delta} \nO valor das raízes é: x1 = ${x1}; x2 = ${x2}`)
+
+    </script>
+</body>
+</html>

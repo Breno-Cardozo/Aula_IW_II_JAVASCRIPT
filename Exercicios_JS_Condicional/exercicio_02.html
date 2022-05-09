@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <script>
+        var salario= parseInt( prompt('Me informe o seu salário:'))
+        
+        if (salario != 0){
+            if(salario <= 280){
+                var salario02= parseInt(salario*20)/100
+                var newsalario=(salario + salario02)
+                document.write(`O seu salário antes do aumento era de R$ ${salario}, teve um aumento de 20%, o valor a ser acrescentado será de R$ ${salario02}, seu novo salário será de R$ ${newsalario}`)
+            
+            }
+
+            if (salario > 280 && salario < 700){
+                var salario02 = parseInt(salario*15)/100
+                var newsalario=(salario+ salario02)
+                document.write(`O seu salário antes do aumento era de R$ ${salario}, teve um aumento de 15%, o valor a ser acrescentado será de R$ ${salario02}, seu novo salário será de R$ ${newsalario}`)
+            }
+
+            if (salario > 700 && salario < 1500) {
+                var salario02 = parseInt(salario * 10) / 100
+                var newsalario = (salario02 + salario)
+                document.write(`O seu salário antes do aumento era de R$ ${salario}, teve um aumento de 10%, o valor a ser acrescentado será de R$ ${salario02}, seu novo salário será de R$ ${newsalario}`)
+            }
+
+            if (salario >= 1500) {
+                var salario02 = parseInt(salario * 5) / 100
+                var newsalario = (salario02 + salario)
+                document.write(`O seu salário antes do aumento era de R$ ${salario}, teve um aumento de 5%, o valor a ser acrescentado será de R$ ${salario02}, seu novo salário será de R$ ${newsalario}`)
+             }
+            
+        }
+    </script>
+    
+</body>
+</html>

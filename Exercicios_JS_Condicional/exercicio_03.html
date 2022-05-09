@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <script>
+        var mencao_01 = parseInt(prompt('Digite a primeira menção alcançada por você nesse semestre:'))
+        var mencao_02 = parseInt(prompt('Digite a segunda menção alcançada por você nesse semestre:'))
+        var media = (mencao_01+mencao_02) / 2
+
+        if (media >= 9 && media <=10) {
+        var conceito = "A"
+        }
+        if (media >= 7.5 && media < 9) {
+            var conceito = "B"
+        }
+        if (media >= 6 && media < 7.5) {
+            var conceito = "C"
+        }
+        if (media >= 4 && media < 6) {
+            var conceito = "D"
+        }
+        if (media >= 0 && media < 4) {
+            var conceito = "E"
+        }
+
+        switch (conceito) {
+            case "A":
+                alert(`Suas nota esse semestre foram: ${mencao_01} ${mencao_02}. Sua média foi de ${media} e seu conceito foi A. Você foi APROVADO`)
+                break;
+            case "B":
+                alert(`Suas nota esse semestre foram: ${mencao_01} ${mencao_02}. Sua média foi de ${media} e seu conceito foi B. Você foi APROVADO`)
+                break;
+            case "C":
+                alert(`Suas nota esse semestre foram: ${mencao_01} ${mencao_02}. Sua média foi de ${media} e seu conceito foi C. Você foi APROVADO`)
+                break;
+            case "D":
+                alert(`Suas nota esse semestre foram: ${mencao_01} ${mencao_02}. Sua média foi de ${media} e seu conceito foi D. Você foi REPROVADO`)
+                break;
+            case "E":
+                alert(`Suas nota esse semestre foram: ${mençao_01} ${mencao_02}. Sua média foi de ${media} e seu conceito foi E. Você foi REPROVADO`)
+                break;
+                default:
+                    break;
+        }   
+    </script>
+    
+</body>
+</html>
