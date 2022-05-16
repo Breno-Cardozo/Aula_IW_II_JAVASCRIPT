@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <script>
+        var tempo = 0
+        var pais_a = 80000
+        var pais_b = 200000
+
+        while (pais_a < pais_b){
+            pais_a= pais_a + (pais_a * 0.03)
+            pais_b= pais_b + (pais_b * 0.015)
+            tempo++
+        }
+
+        alert (`O tempo para a população do País A ser maior que a do País B é de ${tempo} anos`)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <script>
+        var impar = 0
+        var par = 0
+
+        for(var x = 1; x <=10; x++){
+            var num = Number(prompt('Insira um número inteiro:'))
+            var cont = num % 2
+
+            if(cont == 1){
+                impar++
+                document.write(`${impar}º número ímpar inserido = ${num} <br>`)
+
+            }
+
+            else {
+                par++
+                document.write(`${par}º número par inserido = ${num} <br>`)
+            }
+        }
+
+        document.write(`<br>Quantidade de números pares ${par} <br>`)
+        document.write(`Quantidade de números ímpares ${impar}`)
+    </script>
+</body>
+</html>

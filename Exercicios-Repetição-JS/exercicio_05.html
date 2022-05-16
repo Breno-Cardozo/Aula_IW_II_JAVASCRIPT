@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+        var num = Number(prompt('Me informe um número inteiro de 1 a 10:'))
+
+        while (num < 0 || num > 10) {
+        var num= Number(prompt('Digite um número inteiro ENTRE 1 a 10 :'));
+        }
+
+        document.write(`Tabuada do ${num}: <br>`)
+
+        for (var mlt = 1; mlt < 11; mlt++){
+            var calcula = num * mlt
+
+            document.write(`${num} X ${mlt} = ${calcula} <br>`)
+        }
+    </script>
+    
+</body>
+</html>
