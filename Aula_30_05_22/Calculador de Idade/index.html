@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio Calcula Idade</title>
+</head>
+<body>
+
+    <div class="nsc">
+        <h1>Informe seu nome de nascimento: </h1>
+        <input type="number" name="nas" id="nas">
+    </div>
+    <br>
+    <div class="gen">
+        <h1>Informe seu sexo:</h1>
+        <input type="radio" id="fem" name="gnr" value="Feminino">
+        <label for="fem">Feminino</label>
+        <input type="radio" id="masc" name="gnr" value="Masculino">
+        <label for="masc">Masculino</label>
+    </div> 
+    <br>
+    <input type="submit" name="btn" value="ENVIAR" onclick="" id="btn">
+
+
+
+
+    <script>
+        document.getElementById("botao").onclick = function(){
+            var radios =  document.getElementsByName("sexo")
+            var ano = (documentgetElementById('ano')).value
+            for (var i = 0; i < radios.length; i++){
+                var escolha = radios[i].value
+                console.log("Escolheu: " + escolha)
+                resultado (escolha,ano)
+            }
+        }
+
+
+        var texto = documentgetElementById('texto')
+        var imagem = documentgetElementById('imagem')
+    </script>
+    
+</body>
+</html> 
